@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS SIMPLE CALCULATOR</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+
+	<h1 class="head">Javascript Simple Calculator</h1>
+
+	<form name="form1" onsubmit="display(); return false;">
+	
+		
+	<div class="container">
+		<input type="text" name="answer" placeholder="0" id="userinput"  required /><br><br>
+	<button type="button" value="1" id="btn1" onclick="form1.answer.value+=`1`">1</button>
+	<button type="button" value="2" id="btn2" onclick="form1.answer.value+=`2`">2</button>
+	<button type="button" value="3" id="btn3" onclick="form1.answer.value+=`3`">3</button>
+	<button type="button" value="+" id="btn4" onclick="form1.answer.value+=`+`">+</button><br>
+	<button type="button" value="4" id="btn5" onclick="form1.answer.value+=`4`">4</button>
+	<button type="button" value="5" id="btn6" onclick="form1.answer.value+=`5`">5</button>
+	<button type="button" value="6" id="btn7" onclick="form1.answer.value+=`6`">6</button>
+	<button type="button" value="-" id="btn8" onclick="form1.answer.value+=`-`">-</button><br>
+	<button type="button" value="7" id="btn9" onclick="form1.answer.value+=`7`">7</button>
+	<button type="button" value="8" id="btn10" onclick="form1.answer.value+=`8`">8</button>
+	<button type="button" value="9" id="btn11" onclick="form1.answer.value+=`9`">9</button>
+	<button type="button" value="*" id="btn12" onclick="form1.answer.value+=`*`">*</button><br>
+	<button type="button" value="DEL" id="btn13" onclick="form1.answer.value=''">DEL</button>
+	<button type="button" value="0" id="btn14" onclick="form1.answer.value+=`0`">0</button>
+	<button type="button" value="=" id="btn15" onclick="form1.answer.value=eval(form1.answer.value)">=</button>
+	<button type="submit" value="/" id="btn16" onclick="form1.answer.value+=`/`">/</button>
+
+	
+	
+</form>
+</div>
+<script>
+	function display(){
+
+
+ let button1=(document.querySelector("#btn1").value);
+ // let button2=(document.querySelector("#btn2").value);
+ // let button3=(document.querySelector("#btn3").value);
+ // let button+=(document.querySelector("#btn4").value);
+
+document.querySelector("#userinput").innerHTML =`${button1}`;
+// document.querySelector("#userinput").innerHTML =`${button2}`;
+// document.querySelector("#userinput").innerHTML =`${button3}`;
+// document.querySelector("#userinput").innerHTML =`${button+}`;
+
+
+
+
+
+  }     
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
